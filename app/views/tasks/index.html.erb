@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="justify-content-center d-flex">
+    <h1>Tasks</h1>
+  </div>
+
+  <ul>
+    <% @tasks.each do |task| %>
+      <li><%= link_to task.title, task_path(task)  %></li>
+    <% end %>
+  </ul>
+
+ <%= link_to new_task_path do %>
+  <i class="fa fa-plus"></i> Add a new task
+<% end %>
+
+</div>

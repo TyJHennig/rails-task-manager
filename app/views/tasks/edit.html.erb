@@ -1,0 +1,9 @@
+<h1>edit task</h1>
+
+<div class="container justify-content-center">
+  <%= simple_form_for @task do |f| %>
+    <%= f.input :title %>
+    <%= f.input :details %>
+    <%= f.submit %>
+  <% end %>
+</div>
